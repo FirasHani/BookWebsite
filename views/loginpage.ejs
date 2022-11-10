@@ -1,0 +1,75 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<div class="container">  	
+		
+    <form class="form-1" action="/users/loginpage" method="POST">
+        
+        
+        <h1>Login</h1>
+        
+       
+        <input type="number" id="IDnumber" name="IDnumber" required placeholder="IDnumber" >
+        <!-- <img src="/images/Vector.jpg" width="40px"  /> -->
+        <br>
+      
+        
+        
+        <input type="password" id="password" name="password" required placeholder="password">
+        <!-- <img src="/images/fa-solid_lock.png" width="40px"  /> -->
+        <button>Login</button>
+          
+        
+        <!-- <input type="submit" id="login" value="Login"> -->
+        <div id="create-account-wrap">
+            <p>Dont Have a account? <a  href="/users/register">Register</a></a><p>
+          </div>
+          <br>
+    </form>
+    
+</body>
+
+<%- include('./partials/footer') %> 
+
+</html>
+
+
+
+
+
+<!-- 
+<body>
+	<div id="login-form-wrap">  	
+		
+
+			
+				<form id="login-form" action="/users/loginpage" method="POST">
+					<label>Login</label>
+					
+                   <p>
+                    <input type="number" id="IDnumber" name="IDnumber" required placeholder="IDnumber"><i class="validation"><span></span><span></span></i>
+				</p>
+                    
+					<p>
+                    <input type="password" id="password" name="password" required placeholder="password"><i class="validation"><span></span><span></span></i>
+					</p>	
+
+                      
+                    <button>Login</button>
+                    
+				</form>
+                <div id="create-account-wrap">
+                    <p>Dont Have a account? <a href="/users/register">Register</a></a><p>
+                  </div>
+</html> -->
